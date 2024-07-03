@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="MotorPH-Payroll-System_CLEMENTE-master/src"/>
+	<classpathentry kind="lib" path="MotorPH-Payroll-System_CLEMENTE-master/dist/lib/AbsoluteLayout.jar"/>
+	<classpathentry kind="lib" path="MotorPH-Payroll-System_CLEMENTE-master/dist/lib/commons-dbutils-1.8.1.jar"/>
+	<classpathentry kind="lib" path="MotorPH-Payroll-System_CLEMENTE-master/dist/lib/commons-dbutils-1.8.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="MotorPH-Payroll-System_CLEMENTE-master/dist/lib/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="MotorPH-Payroll-System_CLEMENTE-master/dist/lib/mysql-connector-j-8.3.0.jar"/>
+	<classpathentry kind="lib" path="MotorPH-Payroll-System_CLEMENTE-master/dist/motor_ph.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="MotorPH-Payroll-System_CLEMENTE-master/build/classes"/>
+</classpath>
