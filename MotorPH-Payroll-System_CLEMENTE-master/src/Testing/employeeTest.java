@@ -112,7 +112,7 @@ public class employeeTest {
     @Test
     public void testSaveEmployeeToDatabase() throws SQLException {
         // Prepare test data
-        Employee employee = new Employee("Chan", "Jose Mari", new Date(83, 9, 11),
+        Employee employee = new Employee("Chan", "Jackie", new Date(83, 9, 11),
                 "North Pole, Malamig City", "966-860-999",
                 "44-4599957-3", "820126859991", "691299930870", "442-605-999-000");
 
