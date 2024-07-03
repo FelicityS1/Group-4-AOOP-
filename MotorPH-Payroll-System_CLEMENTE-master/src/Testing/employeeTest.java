@@ -1,4 +1,5 @@
 // !!REMINDER!! - Make sure to change the jdbc setting in MyConnection.java first
+// To test, remove the ignore on the test case you want to test
 
 package Testing;
 
