@@ -1,5 +1,6 @@
 package payroll;
 
+import dbConnection.MyConnection;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.text.ParseException;

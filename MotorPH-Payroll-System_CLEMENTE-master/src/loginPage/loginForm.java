@@ -1,4 +1,4 @@
-package payroll;
+package loginPage;
 
 import java.awt.HeadlessException;
 import javax.swing.JOptionPane;
@@ -6,6 +6,9 @@ import java.sql.*;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Connection;
+import adminPage.AdminPortal;
+import dbConnection.MyConnection;
+import nonAdminPage.NonAdminPortal;
 
 
 
@@ -40,7 +43,6 @@ ResultSet rs;//to execute the query
         passwordtxt = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(500, 500));
         setMinimumSize(new java.awt.Dimension(500, 500));
         setResizable(false);
 
@@ -85,7 +87,7 @@ ResultSet rs;//to execute the query
         jLabel5.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel5.setText("<html> Submitted by: Group 4<br>Section: A2102<br>MO-IT113 - Advanced Object-oriented Programming </html>");
+        jLabel5.setText("<html> Submitted by: Abegail A. Clemente<br>Section: H2102<br>MO-IT110 - Object-oriented Programming </html>");
 
         javax.swing.GroupLayout footerLayout = new javax.swing.GroupLayout(footer);
         footer.setLayout(footerLayout);

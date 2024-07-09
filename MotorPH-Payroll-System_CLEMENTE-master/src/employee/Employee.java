@@ -1,4 +1,4 @@
-package payroll;
+package employee;
 
 
 import java.sql.Connection;
@@ -10,8 +10,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
-import payroll.EmployeeDetails;
-import payroll.MyConnection;
+import dbConnection.MyConnection;
 
 
 //For Employee Details

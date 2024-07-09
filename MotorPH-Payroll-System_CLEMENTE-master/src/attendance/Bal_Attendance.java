@@ -1,6 +1,7 @@
-package payroll;
+package attendance;
 
 
+import dbConnection.MyConnection;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

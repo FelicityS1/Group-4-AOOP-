@@ -5,7 +5,6 @@ package Testing;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 
 import java.sql.Date;
@@ -16,15 +15,15 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import payroll.AdminPortal;
-import payroll.Employee;
-import payroll.EmployeeDataController;
-import payroll.MyConnection;
+import adminPage.AdminPortal;
+import employee.Employee;
+import employee.EmployeeDataController;
+import dbConnection.MyConnection;
 
 
 public class employeeTest {
 	
-	@Ignore
+    @Ignore
     @Test
     public void testEmployeeConstructorAndGetterMethods() {
         int employeeID = 1;
@@ -67,14 +66,6 @@ public class employeeTest {
 	}
 	
 	
-	@Ignore
-	@Test
-	public void testUniqueEmployeeIDs() {
-	    Employee emp1 = new Employee(1, "Doe", "John", Date.valueOf("1990-01-01"), "Address", "123456789", "SSS", "Philhealth", "Pagibig", "TIN");
-	    Employee emp2 = new Employee(2, "Smith", "Jane", Date.valueOf("1990-01-01"), "Address", "987654321", "SSS", "Philhealth", "Pagibig", "TIN");
-
-	    assertNotEquals(emp1.getEmployeeID(), emp2.getEmployeeID());
-	}
 	
 	
     private AdminPortal adminPortal;
@@ -93,7 +84,7 @@ public class employeeTest {
         
     }
     
-    @Ignore
+    
     @Test
     public void testListAllEmployeesFromDatabase() throws SQLException {
         // Retrieve all employees from the database using EmployeeDataController

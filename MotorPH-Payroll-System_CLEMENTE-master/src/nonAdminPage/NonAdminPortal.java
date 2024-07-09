@@ -1,5 +1,7 @@
-package payroll;
+package nonAdminPage;
 
+import dbConnection.MyConnection;
+import loginPage.loginForm;
 import java.sql.Connection;
 import java.awt.CardLayout;
 import java.awt.Color;
@@ -20,6 +22,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
+import attendance.AttendanceController;
+import employee.Employee;
+import employee.EmployeeDataController;
+import employee.EmployeeDataHandler;
 
 
 

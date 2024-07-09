@@ -1,5 +1,7 @@
-package payroll;
+package employee;
 
+import employee.Employee;
+import dbConnection.MyConnection;
 import javax.swing.table.DefaultTableModel;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -1,12 +1,12 @@
-package payroll;
+package employee;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import payroll.EmployeeDetails;
-import payroll.MyConnection;
+import employee.EmployeeDetails;
+import dbConnection.MyConnection;
 import java.sql.ResultSet;
 import javax.swing.table.DefaultTableModel;
 

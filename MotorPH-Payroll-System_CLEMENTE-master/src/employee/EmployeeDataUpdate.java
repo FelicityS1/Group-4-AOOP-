@@ -1,10 +1,10 @@
-package payroll;
+package employee;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
-import payroll.MyConnection;
+import dbConnection.MyConnection;
 
 public class EmployeeDataUpdate {
     public static void updateEmployeeInDatabase(int employeeID, String lastName, String firstName, String birthday, String address,

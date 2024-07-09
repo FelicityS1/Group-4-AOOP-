@@ -1,5 +1,7 @@
-package payroll;
+package adminPage;
 
+import dbConnection.MyConnection;
+import loginPage.loginForm;
 import java.sql.Connection;
 import java.awt.CardLayout;
 import java.awt.Color;
@@ -36,6 +38,17 @@ import javax.swing.JDialog;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.GroupLayout;
 import javax.swing.LayoutStyle.ComponentPlacement;
+import attendance.AttendanceController;
+import attendance.Bal_Attendance;
+import attendance.Bean_Attendance;
+import employee.Employee;
+import employee.EmployeeDataController;
+import employee.EmployeeDataHandler;
+import employee.EmployeeDataUpdate;
+import employee.JobDetailsManager;
+import payroll.PayrollCalculator;
+import payroll.PayrollDataAccess;
+import payroll.payslip;
 
 
 
@@ -794,42 +807,42 @@ public void saveEmployeeToDatabase(Employee employee) {
         });
 
         javax.swing.GroupLayout pnlProfileLayout = new javax.swing.GroupLayout(pnlProfile);
+        pnlProfile.setLayout(pnlProfileLayout);
         pnlProfileLayout.setHorizontalGroup(
-        	pnlProfileLayout.createParallelGroup(Alignment.TRAILING)
-        		.addGroup(pnlProfileLayout.createSequentialGroup()
-        			.addGroup(pnlProfileLayout.createParallelGroup(Alignment.LEADING)
-        				.addGroup(pnlProfileLayout.createSequentialGroup()
-        					.addGap(19)
-        					.addGroup(pnlProfileLayout.createParallelGroup(Alignment.LEADING)
-        						.addComponent(lblEmployeeRole)
-        						.addComponent(photopanel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
-        				.addGroup(pnlProfileLayout.createSequentialGroup()
-        					.addGap(45)
-        					.addComponent(lblGreetings)
-        					.addPreferredGap(ComponentPlacement.RELATED)
-        					.addComponent(lblEmployeeName)))
-        			.addContainerGap(26, Short.MAX_VALUE))
-        		.addGroup(pnlProfileLayout.createSequentialGroup()
-        			.addGap(0, 72, Short.MAX_VALUE)
-        			.addComponent(btnPayslip)
-        			.addGap(78))
+            pnlProfileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlProfileLayout.createSequentialGroup()
+                .addGroup(pnlProfileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlProfileLayout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addGroup(pnlProfileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblEmployeeRole)
+                            .addComponent(photopanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(pnlProfileLayout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addComponent(lblGreetings)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblEmployeeName)))
+                .addContainerGap(26, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlProfileLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnPayslip)
+                .addGap(78, 78, 78))
         );
         pnlProfileLayout.setVerticalGroup(
-        	pnlProfileLayout.createParallelGroup(Alignment.LEADING)
-        		.addGroup(pnlProfileLayout.createSequentialGroup()
-        			.addGap(18)
-        			.addComponent(photopanel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-        			.addPreferredGap(ComponentPlacement.RELATED)
-        			.addComponent(lblEmployeeRole)
-        			.addPreferredGap(ComponentPlacement.UNRELATED)
-        			.addGroup(pnlProfileLayout.createParallelGroup(Alignment.BASELINE)
-        				.addComponent(lblGreetings)
-        				.addComponent(lblEmployeeName))
-        			.addGap(85)
-        			.addComponent(btnPayslip)
-        			.addContainerGap(120, Short.MAX_VALUE))
+            pnlProfileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlProfileLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(photopanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblEmployeeRole)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pnlProfileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblGreetings)
+                    .addComponent(lblEmployeeName))
+                .addGap(85, 85, 85)
+                .addComponent(btnPayslip)
+                .addContainerGap(117, Short.MAX_VALUE))
         );
-        pnlProfile.setLayout(pnlProfileLayout);
 
         pnlAttendance.setBackground(new java.awt.Color(204, 204, 204));
         pnlAttendance.setBorder(javax.swing.BorderFactory.createEtchedBorder());

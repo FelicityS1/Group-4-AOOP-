@@ -1,6 +1,8 @@
 
-package payroll;
+package employee;
 
+import employee.Employee;
+import dbConnection.MyConnection;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -9,6 +11,7 @@ import java.sql.SQLException;
 import java.util.Date;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import payroll.PayrollReport;
 
 //Code for updating the First name based on the user logged in using the UserID and EmployeeID
 public class EmployeeDataHandler {
